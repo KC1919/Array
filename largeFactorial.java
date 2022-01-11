@@ -1,3 +1,18 @@
+
+//Logic
+
+/*
+First we find the factorial of the largest number among the given numbers.
+while finding the factorial we keep on storing the factorial of every number between 1 to Max number,
+and keep on storing it in the hashmap
+And then we iterate over the given numbers, we fetch the factorial of the current number
+from the hashmap and store in the ans array.
+
+This saves us from calculating the factorial for every number again and again by running the loop
+hence it reduces the time complexity.
+ */
+
+//Code
 import java.util.HashMap;
 public class largeFactorial {
     public long[] factorial(long a[], int n) {
